@@ -1,8 +1,8 @@
-require 'thor'
-require_relative '../subcommand_registry/registry'
+require "thor"
+require_relative "../subcommand_registry"
 
-module Cli::Refinements
-  class ThorSubcommandRegistry
+module CliToolkit::Refinements
+  module ThorSubcommandRegistry
     refine Thor.singleton_class do
       def subcommand(commands_klass:, details: {})
         details[:desc] ||= @desc
@@ -10,7 +10,7 @@ module Cli::Refinements
         details[:usage] ||= @usage
         details[:long_desc] ||= @long_desc
 
-        Cli::SubcommandRegistry::Registry.register(commands_klass: commands_klass, details: details)
+        CliToolkit::Registry.register(commands_klass: commands_klass, details: details)
         super(details[:name], commands_klass)
       end
     end

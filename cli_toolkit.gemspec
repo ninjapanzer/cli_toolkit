@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.description = "Write a longer description or delete this line."
   spec.homepage = "https://example.com"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 2.6.0"
+  spec.required_ruby_version = ">= 3.2.0"
 
   spec.metadata["allowed_push_host"] = "Set to your gem server 'https://example.com'"
 
@@ -32,7 +32,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   # Uncomment to register a new dependency of your gem
-  spec.add_dependency "zeitwerk", "~> 2.6.6"
   spec.add_dependency "thor", "~> 1.2.1"
 
   # For more information and examples about making a new gem, check out our
