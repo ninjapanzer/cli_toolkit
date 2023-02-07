@@ -1,0 +1,14 @@
+module CliToolkit
+  class Sideloader
+
+    def load_command_gem: -> untyped
+
+    private
+
+    def load_gem: -> untyped
+
+    def rubygem?: -> untyped
+
+    def to_studly: -> untyped
+  end
+end

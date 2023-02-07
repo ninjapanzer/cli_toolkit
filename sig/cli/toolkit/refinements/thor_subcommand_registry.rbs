@@ -1,0 +1,5 @@
+module CliToolkit::Refinements
+  module ThorSubcommandRegistry
+    def subcommand: (commands_klass: Thor, details: untyped) -> untyped
+  end
+end

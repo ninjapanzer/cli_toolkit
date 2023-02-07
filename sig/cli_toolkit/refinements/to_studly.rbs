@@ -1,0 +1,7 @@
+module CliToolkit
+  module Refinements
+    module ToStudly
+      def to_studly: -> untyped
+    end
+  end
+end

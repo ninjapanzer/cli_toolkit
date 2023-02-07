@@ -1,0 +1,7 @@
+module CliToolkit::Registry
+  def self.register: (commands_klass: untyped, details: untyped) -> untyped
+
+  def self.commands: () -> untyped
+
+  def self.reset!: () -> untyped
+end

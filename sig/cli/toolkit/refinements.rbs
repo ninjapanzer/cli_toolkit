@@ -1,0 +1,7 @@
+module CliToolkit
+  class Error < StandardError
+  end
+
+  module Refinements
+  end
+end

@@ -10,9 +10,9 @@ Gem::Specification.new do |spec|
 
   spec.summary = "Write a short summary, because RubyGems requires one."
   spec.description = "Write a longer description or delete this line."
-  spec.homepage = "https://example.com"
+  spec.homepage = "https://github.com/ninjapanzer/cli_toolkit"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.2.0"
+  spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["allowed_push_host"] = "Set to your gem server 'https://example.com'"
 
@@ -33,7 +33,9 @@ Gem::Specification.new do |spec|
 
   # Uncomment to register a new dependency of your gem
   spec.add_dependency "thor", "~> 1.2.1"
+  # spec.add_dependency "cli_types", "~> 0.1.0"
 
-  # For more information and examples about making a new gem, check out our
-  # guide at: https://bundler.io/guides/creating_gem.html
+  spec.add_development_dependency "rbs", "~> 1.0"
+  spec.add_development_dependency "rspec", "~> 3.0"
+  spec.add_development_dependency "rubocop", "~> 1.21"
 end
